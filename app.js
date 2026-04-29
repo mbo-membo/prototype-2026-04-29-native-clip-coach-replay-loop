@@ -36,10 +36,10 @@ function setTimeline(current) {
 function renderEntry() {
   step = 'entry';
   stateEyebrow.textContent = 'Pronunciation coach';
-  stateTitle.textContent = 'Now practice your pronunciation';
+  stateTitle.textContent = 'Practice saying the line back';
   stateBadge.textContent = 'Speak now';
   stateBadge.className = 'state-badge';
-  stateCopy.textContent = 'Hold to speak. You’ll get one pinpointed pronunciation note and an immediate retry.';
+  stateCopy.textContent = 'Hold to speak, get one pronunciation note, then retry.';
   waveLabel.textContent = 'Hold to speak';
   waveBars.classList.remove('active');
   focusStatus.textContent = 'No issue flagged yet';

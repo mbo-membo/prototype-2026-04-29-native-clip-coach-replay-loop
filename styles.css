@@ -96,7 +96,7 @@ button { font: inherit; }
   margin-bottom: 14px;
 }
 .status-icons { display: flex; gap: 6px; }
-.topbar { margin-bottom: 14px; }
+.topbar { margin-bottom: 10px; }
 .topbar-copy { text-align: center; }
 .topbar-copy p {
   margin: 0 0 4px;
@@ -122,15 +122,15 @@ button { font: inherit; }
   border: 1px solid rgba(255,255,255,0.9);
   box-shadow: 0 10px 28px rgba(42,49,69,0.08);
   border-radius: 24px;
-  padding: 14px;
-  margin-bottom: 10px;
-}
-.compact-hero h1 {
-  font-size: 24px;
+  padding: 12px;
   margin-bottom: 8px;
 }
+.compact-hero h1 {
+  font-size: 21px;
+  margin-bottom: 6px;
+}
 .compact-hero .subcopy {
-  font-size: 14px;
+  font-size: 13px;
 }
 .lesson-card {
   background: linear-gradient(180deg, #fff8cf 0%, #fff2bc 100%);
@@ -156,8 +156,8 @@ h1 {
 }
 h2 {
   margin: 2px 0 0;
-  font-size: 20px;
-  line-height: 1.08;
+  font-size: 18px;
+  line-height: 1.05;
 }
 h3 {
   margin: 2px 0 0;
@@ -171,7 +171,8 @@ h3 {
 .caption-text {
   margin: 0;
   color: var(--muted);
-  line-height: 1.45;
+  line-height: 1.35;
+  font-size: 13px;
 }
 .video-card {
   margin-top: 14px;
@@ -182,8 +183,8 @@ h3 {
 }
 .video-frame {
   position: relative;
-  min-height: 156px;
-  padding: 12px;
+  min-height: 124px;
+  padding: 10px;
   background:
     radial-gradient(circle at 30% 20%, rgba(255,255,255,0.18), transparent 25%),
     linear-gradient(160deg, #173764 0%, #355f9e 55%, #7b5cff 100%);
@@ -197,12 +198,12 @@ h3 {
 .video-persona {
   display: grid;
   justify-items: center;
-  gap: 8px;
-  padding-top: 10px;
+  gap: 6px;
+  padding-top: 2px;
 }
 .avatar-ring {
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -210,12 +211,12 @@ h3 {
   border: 3px solid rgba(255,255,255,0.22);
 }
 .avatar-face {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 34px;
+  font-size: 24px;
   background: linear-gradient(180deg, #ffeec8 0%, #f7dca3 100%);
 }
 .caption-chip {
@@ -240,7 +241,36 @@ h3 {
   box-shadow: 0 10px 24px rgba(0,0,0,0.18);
 }
 .clip-support {
-  padding: 12px;
+  padding: 10px;
+}
+.practice-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fff4c2 0%, #ffe89a 100%);
+}
+.practice-label {
+  margin: 0 0 2px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-weight: 800;
+  color: var(--navy);
+}
+.practice-banner strong {
+  display: block;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.practice-cta {
+  flex: 0 0 auto;
+}
+.compact-row {
+  margin-top: 8px;
 }
 .pill,
 .state-badge,
@@ -263,9 +293,9 @@ h3 {
 }
 .phrase {
   display: block;
-  margin: 8px 0 4px;
-  font-size: 18px;
-  line-height: 1.35;
+  margin: 6px 0 2px;
+  font-size: 16px;
+  line-height: 1.25;
 }
 .button-row {
   margin-top: 12px;
@@ -296,9 +326,9 @@ h3 {
   color: #5d47cb;
 }
 .wave-shell {
-  margin-top: 12px;
-  border-radius: 18px;
-  padding: 12px 12px;
+  margin-top: 8px;
+  border-radius: 16px;
+  padding: 10px 10px;
   background: #fffaf3;
   border: 1px solid #f0e2c5;
   text-align: center;
@@ -331,9 +361,9 @@ h3 {
   font-weight: 700;
 }
 .focus-note {
-  margin-top: 10px;
-  border-radius: 16px;
-  padding: 12px;
+  margin-top: 8px;
+  border-radius: 14px;
+  padding: 10px;
   background: rgba(255,255,255,0.82);
   border: 1px solid rgba(22,52,95,0.08);
 }
@@ -367,13 +397,13 @@ h3 {
 }
 .button-stack {
   display: grid;
-  gap: 8px;
-  margin-top: 12px;
+  gap: 6px;
+  margin-top: 8px;
 }
 .cta {
-  min-height: 44px;
-  padding: 10px 14px;
-  font-size: 15px;
+  min-height: 40px;
+  padding: 8px 12px;
+  font-size: 14px;
 }
 .cta.primary {
   background: linear-gradient(180deg, var(--yellow) 0%, var(--yellow-deep) 100%);
@@ -507,6 +537,6 @@ h3 {
   color: var(--warn-ink);
 }
 @media (max-width: 420px) {
-  h1 { font-size: 22px; }
-  .phone-wrap { height: 700px; }
+  h1 { font-size: 20px; }
+  .phone-wrap { height: 680px; }
 }
