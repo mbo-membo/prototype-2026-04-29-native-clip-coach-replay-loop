@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=coachreplay3" />
+  <link rel="stylesheet" href="styles.css?v=coachreplay4" />
 </head>
 <body>
   <main class="page">
@@ -30,86 +30,30 @@
             <button class="icon-btn" aria-label="More">⋯</button>
           </header>
 
-          <section class="lesson-card compact-hero">
+          <section class="lesson-card compact-hero minimal-screen">
             <div class="eyebrow">Pronunciation practice</div>
-            <h1>Watch the native clip, then practice saying it back.</h1>
-            <p class="subcopy">Speak once, get one precise pronunciation note, then retry straight away.</p>
+            <h1>Copy the speaker out loud.</h1>
 
-            <article class="video-card">
-              <div class="video-frame">
+            <article class="video-card minimal-video-card">
+              <div class="video-frame minimal-video-frame">
                 <div class="video-overlay">
                   <span class="pill active">Native speaker video</span>
-                  <span class="tiny-meta">2.8s clip</span>
+                  <span class="tiny-meta">2.8s</span>
                 </div>
-                <div class="video-persona">
+                <div class="video-persona minimal-persona">
                   <div class="avatar-ring">
                     <div class="avatar-face">🙂</div>
                   </div>
-                  <div class="caption-chip">"Je voudrais un café…"</div>
+                  <div class="caption-chip">Je voudrais un café…</div>
                 </div>
                 <button class="video-play" id="playNative" aria-label="Play native video">▶</button>
               </div>
-              <div class="clip-support">
+              <div class="clip-support minimal-clip-support">
                 <strong class="phrase">« Je voudrais un café et l’addition, s’il vous plaît. »</strong>
-                <p class="translation">"I’d like a coffee and the bill, please."</p>
-                <div class="practice-banner">
-                  <div>
-                    <p class="practice-label">Next step</p>
-                    <strong>Practice your pronunciation now</strong>
-                  </div>
-                  <button class="mini-btn dark practice-cta">Speak it back</button>
-                </div>
-                <div class="button-row compact-row">
-                  <button class="mini-btn">Replay clip</button>
-                  <button class="mini-btn" id="playSlow">🐢 Slower</button>
-                </div>
+                <button class="cta primary single-cta" id="mainAction">Speak it back</button>
+                <p class="micro-reassurance">We’ll show one thing to improve, then let you retry.</p>
               </div>
             </article>
-          </section>
-
-          <section class="coach-card">
-            <div class="coach-head">
-              <div>
-                <p class="eyebrow soft" id="stateEyebrow">Pronunciation coach</p>
-                <h2 id="stateTitle">Practice saying the line back</h2>
-              </div>
-              <span class="state-badge" id="stateBadge">Speak now</span>
-            </div>
-
-            <p class="coach-copy" id="stateCopy">Hold to speak, get one pronunciation note, then retry.</p>
-
-            <div class="wave-shell" id="waveShell">
-              <div class="wave-bars" id="waveBars" aria-hidden="true">
-                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-              </div>
-              <p class="wave-label" id="waveLabel">Hold to speak</p>
-            </div>
-
-            <div class="focus-note" id="focusNote">
-              <div class="focus-header">
-                <span class="focus-chip">Pinpoint</span>
-                <span class="focus-status" id="focusStatus">No issue flagged yet</span>
-              </div>
-              <p id="focusText">If something trips you up, the coach will highlight just one word to fix.</p>
-            </div>
-
-            <div class="recovery-card hidden" id="recoveryCard">
-              <p class="recovery-title">Didn’t catch you clearly.</p>
-              <p class="recovery-copy">You can listen once more, slow it down, or peek at a hint before trying again.</p>
-              <div class="button-row">
-                <button class="mini-btn" id="replayFromRecovery">▶ Replay native</button>
-                <button class="mini-btn" id="peekHint">Peek hint</button>
-              </div>
-              <div class="peek-panel hidden" id="peekPanel">
-                <p><strong>Hint:</strong> keep <em>l’addition</em> light and connected, rather than pausing before the ending.</p>
-              </div>
-            </div>
-
-            <div class="button-stack">
-              <button class="cta primary" id="mainAction">Hold to speak</button>
-              <button class="cta secondary hidden" id="secondaryAction">Try again with that one word in mind</button>
-              <button class="cta ghost" id="skipAction">Not now — just let me listen again</button>
-            </div>
           </section>
 
         </div>
@@ -172,6 +116,6 @@
     </section>
   </main>
 
-  <script src="app.js?v=coachreplay3"></script>
+  <script src="app.js?v=coachreplay4"></script>
 </body>
 </html>

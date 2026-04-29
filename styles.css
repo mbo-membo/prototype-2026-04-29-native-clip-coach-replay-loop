@@ -125,12 +125,19 @@ button { font: inherit; }
   padding: 12px;
   margin-bottom: 8px;
 }
+.minimal-screen {
+  padding: 10px;
+}
 .compact-hero h1 {
   font-size: 21px;
   margin-bottom: 6px;
 }
 .compact-hero .subcopy {
   font-size: 13px;
+}
+.minimal-screen h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
 }
 .lesson-card {
   background: linear-gradient(180deg, #fff8cf 0%, #fff2bc 100%);
@@ -180,6 +187,9 @@ h3 {
   border: 1px solid rgba(22,52,95,0.08);
   border-radius: 20px;
   overflow: hidden;
+}
+.minimal-video-card {
+  margin-top: 8px;
 }
 .video-frame {
   position: relative;
@@ -243,34 +253,19 @@ h3 {
 .clip-support {
   padding: 10px;
 }
-.practice-banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 8px;
-  padding: 10px 12px;
-  border-radius: 16px;
-  background: linear-gradient(180deg, #fff4c2 0%, #ffe89a 100%);
+.minimal-clip-support {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
 }
-.practice-label {
-  margin: 0 0 2px;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  font-weight: 800;
-  color: var(--navy);
+.single-cta {
+  width: 100%;
 }
-.practice-banner strong {
-  display: block;
-  font-size: 14px;
-  line-height: 1.2;
-}
-.practice-cta {
-  flex: 0 0 auto;
-}
-.compact-row {
-  margin-top: 8px;
+.micro-reassurance {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.35;
+  color: var(--muted);
 }
 .pill,
 .state-badge,
