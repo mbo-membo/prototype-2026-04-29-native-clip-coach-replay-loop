@@ -35,16 +35,27 @@
             <h1>Try saying it back while it’s still fresh.</h1>
             <p class="subcopy">One supportive note. One quick retry. Then move on.</p>
 
-            <article class="clip-card">
-              <div class="clip-meta">
-                <span class="pill active">Native speaker</span>
-                <span class="tiny-meta">2.8s</span>
+            <article class="video-card">
+              <div class="video-frame">
+                <div class="video-overlay">
+                  <span class="pill active">Native speaker video</span>
+                  <span class="tiny-meta">2.8s clip</span>
+                </div>
+                <div class="video-persona">
+                  <div class="avatar-ring">
+                    <div class="avatar-face">🙂</div>
+                  </div>
+                  <div class="caption-chip">"Je voudrais un café…"</div>
+                </div>
+                <button class="video-play" id="playNative" aria-label="Play native video">▶</button>
               </div>
-              <strong class="phrase">« Je voudrais un café et l’addition, s’il vous plaît. »</strong>
-              <p class="translation">"I’d like a coffee and the bill, please."</p>
-              <div class="button-row">
-                <button class="mini-btn dark" id="playNative">▶ Play native</button>
-                <button class="mini-btn" id="playSlow">🐢 Slower</button>
+              <div class="clip-support">
+                <strong class="phrase">« Je voudrais un café et l’addition, s’il vous plaît. »</strong>
+                <p class="translation">"I’d like a coffee and the bill, please."</p>
+                <div class="button-row">
+                  <button class="mini-btn dark">Replay clip</button>
+                  <button class="mini-btn" id="playSlow">🐢 Slower</button>
+                </div>
               </div>
             </article>
           </section>
@@ -108,6 +119,41 @@
               <li id="timelineRetry">Retry immediately and feel the improvement</li>
             </ol>
           </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback-preview">
+      <div class="preview-header">
+        <div>
+          <p class="eyebrow soft">Explicit feedback screen</p>
+          <h3>This is the screen I’d show right after the first attempt</h3>
+        </div>
+      </div>
+
+      <div class="preview-phone">
+        <div class="preview-screen">
+          <div class="preview-topbar">
+            <span class="pill active">Coach feedback</span>
+            <span class="tiny-meta">After attempt 1</span>
+          </div>
+
+          <div class="feedback-screen-card">
+            <p class="feedback-label">You’re close</p>
+            <h4>Nice rhythm. One thing to clean up.</h4>
+            <p class="feedback-body">Most of the line landed. The coach is only flagging one word so the user knows this is fixable.</p>
+
+            <div class="feedback-word-row">
+              <span class="feedback-word">l’addition</span>
+              <span class="feedback-tag">Main fix</span>
+            </div>
+            <p class="feedback-tip">Try saying it without pausing before the ending. Keep it lighter and more connected.</p>
+
+            <div class="feedback-actions">
+              <button class="cta secondary">Hear it once more</button>
+              <button class="cta primary">Try again with that word in mind</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
