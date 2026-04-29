@@ -41,7 +41,7 @@ button { font: inherit; }
 .phone-wrap {
   position: relative;
   width: min(100vw - 40px, 390px);
-  height: 780px;
+  height: 720px;
 }
 .device-shadow {
   position: absolute;
@@ -71,9 +71,9 @@ button { font: inherit; }
 }
 .screen {
   height: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
   border-radius: 28px;
-  padding: 14px 14px 18px;
+  padding: 12px 12px 14px;
   background: linear-gradient(180deg, #fffbf4 0%, #f6efe4 100%);
   scrollbar-width: none;
 }
@@ -122,8 +122,15 @@ button { font: inherit; }
   border: 1px solid rgba(255,255,255,0.9);
   box-shadow: 0 10px 28px rgba(42,49,69,0.08);
   border-radius: 24px;
-  padding: 18px;
-  margin-bottom: 12px;
+  padding: 14px;
+  margin-bottom: 10px;
+}
+.compact-hero h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.compact-hero .subcopy {
+  font-size: 14px;
 }
 .lesson-card {
   background: linear-gradient(180deg, #fff8cf 0%, #fff2bc 100%);
@@ -149,7 +156,7 @@ h1 {
 }
 h2 {
   margin: 2px 0 0;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.08;
 }
 h3 {
@@ -175,8 +182,8 @@ h3 {
 }
 .video-frame {
   position: relative;
-  min-height: 220px;
-  padding: 14px;
+  min-height: 156px;
+  padding: 12px;
   background:
     radial-gradient(circle at 30% 20%, rgba(255,255,255,0.18), transparent 25%),
     linear-gradient(160deg, #173764 0%, #355f9e 55%, #7b5cff 100%);
@@ -190,12 +197,12 @@ h3 {
 .video-persona {
   display: grid;
   justify-items: center;
-  gap: 12px;
-  padding-top: 26px;
+  gap: 8px;
+  padding-top: 10px;
 }
 .avatar-ring {
-  width: 108px;
-  height: 108px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -203,8 +210,8 @@ h3 {
   border: 3px solid rgba(255,255,255,0.22);
 }
 .avatar-face {
-  width: 82px;
-  height: 82px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -212,12 +219,12 @@ h3 {
   background: linear-gradient(180deg, #ffeec8 0%, #f7dca3 100%);
 }
 .caption-chip {
-  padding: 10px 14px;
+  padding: 8px 12px;
   border-radius: 999px;
   background: rgba(255,255,255,0.9);
   color: var(--navy);
   font-weight: 700;
-  font-size: 13px;
+  font-size: 12px;
 }
 .video-play {
   position: absolute;
@@ -233,7 +240,7 @@ h3 {
   box-shadow: 0 10px 24px rgba(0,0,0,0.18);
 }
 .clip-support {
-  padding: 14px;
+  padding: 12px;
 }
 .pill,
 .state-badge,
@@ -289,9 +296,9 @@ h3 {
   color: #5d47cb;
 }
 .wave-shell {
-  margin-top: 16px;
-  border-radius: 22px;
-  padding: 18px 14px;
+  margin-top: 12px;
+  border-radius: 18px;
+  padding: 12px 12px;
   background: #fffaf3;
   border: 1px solid #f0e2c5;
   text-align: center;
@@ -301,8 +308,8 @@ h3 {
   align-items: end;
   justify-content: center;
   gap: 6px;
-  height: 48px;
-  margin-bottom: 10px;
+  height: 32px;
+  margin-bottom: 8px;
 }
 .wave-bars span {
   width: 10px;
@@ -324,9 +331,9 @@ h3 {
   font-weight: 700;
 }
 .focus-note {
-  margin-top: 14px;
-  border-radius: 18px;
-  padding: 14px;
+  margin-top: 10px;
+  border-radius: 16px;
+  padding: 12px;
   background: rgba(255,255,255,0.82);
   border: 1px solid rgba(22,52,95,0.08);
 }
@@ -360,13 +367,13 @@ h3 {
 }
 .button-stack {
   display: grid;
-  gap: 10px;
-  margin-top: 16px;
+  gap: 8px;
+  margin-top: 12px;
 }
 .cta {
-  min-height: 52px;
-  padding: 12px 16px;
-  font-size: 16px;
+  min-height: 44px;
+  padding: 10px 14px;
+  font-size: 15px;
 }
 .cta.primary {
   background: linear-gradient(180deg, var(--yellow) 0%, var(--yellow-deep) 100%);
@@ -395,6 +402,7 @@ h3 {
   color: var(--ink);
   font-weight: 700;
 }
+.external-timeline,
 .feedback-preview {
   width: min(100vw - 32px, 390px);
   background: rgba(255,255,255,0.88);
@@ -499,5 +507,6 @@ h3 {
   color: var(--warn-ink);
 }
 @media (max-width: 420px) {
-  h1 { font-size: 28px; }
+  h1 { font-size: 22px; }
+  .phone-wrap { height: 700px; }
 }
